@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulação de Consórcio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Simule parcelas de consórcio, entenda como funciona e fale direto com um consultor para receber uma proposta personalizada.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero" data-animate>
+    <h1>Planeje a compra do seu bem com tranquilidade</h1>
+    <p>
+      O consórcio é uma forma inteligente de conquistar seu carro, imóvel ou serviço
+      sem juros, com parcelas que cabem no seu planejamento.
+    </p>
+    <a class="btn" href="https://wa.me/5521974528623" target="_blank">
+      Simular e falar com um consultor
+    </a>
+  </header>
+
+  <!-- COMO FUNCIONA -->
+  <section>
+    <div class="cards">
+
+      <div class="card" data-animate>
+        <span class="icon">📊</span>
+        <h3>Planejamento</h3>
+        <p>
+          Você escolhe o valor do bem.
+          As parcelas são mensais e sem juros.
+        </p>
+      </div>
+
+      <div class="card" data-animate>
+        <span class="icon">🎯</span>
+        <h3>Contemplação</h3>
+        <p>
+          Todo mês você pode ser contemplado por sorteio
+          ou antecipar através de lance.
+        </p>
+      </div>
+
+      <div class="card" data-animate>
+        <span class="icon">💳</span>
+        <h3>Carta de Crédito</h3>
+        <p>
+          Após a contemplação, você utiliza a carta de crédito
+          para comprar o bem desejado.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PARA QUEM É -->
+  <section>
+    <h2>Para quem o consórcio é ideal?</h2>
+
+    <div class="cards">
+
+      <div class="card" data-animate>
+        <span class="icon">⏳</span>
+        <h3>Quem quer planejar</h3>
+        <p>
+          Ideal para quem não tem pressa imediata
+          e prefere organizar a compra com calma.
+        </p>
+      </div>
+
+      <div class="card" data-animate>
+        <span class="icon">💰</span>
+        <h3>Quem evita juros</h3>
+        <p>
+          Uma alternativa para quem não quer financiamento
+          e busca uma compra mais econômica.
+        </p>
+      </div>
+
+      <div class="card" data-animate>
+        <span class="icon">🚀</span>
+        <h3>Quem pensa no futuro</h3>
+        <p>
+          Ótimo para trocar de carro, comprar imóvel
+          ou realizar projetos pessoais.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SIMULADOR -->
+  <section>
+    <div class="simulator" data-animate>
+      <h2>Tenha uma ideia da sua parcela</h2>
+      <p>
+        Simulação com <strong>prazo fixo de 96 meses</strong>.<br>
+        Valor mínimo do bem: <strong>R$ 280.000</strong>.
+      </p>
+
+      <label for="valor">Valor do bem (R$)</label>
+      <input
+        type="number"
+        id="valor"
+        placeholder="Ex: 280000"
+        inputmode="numeric"
+        min="280000"
+      >
+
+      <button class="btn" id="btnSimular">Simular agora</button>
+
+      <div class="result" id="resultado"></div>
+      <small>*Simulação ilustrativa. Valores oficiais apenas com o consultor.</small>
+    </div>
+  </section>
+
+  <!-- COMPARATIVO -->
+  <section data-animate>
+    <h2>Consórcio ou financiamento?</h2>
+    <p style="text-align:center; max-width:700px; margin:0 auto 40px;">
+      Veja as principais diferenças e entenda qual opção faz mais sentido
+      para o seu momento.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Consórcio</h3>
+        <ul class="compare">
+          <li>✔️ Sem juros</li>
+          <li>✔️ Compra planejada</li>
+          <li>✔️ Parcelas mais acessíveis</li>
+          <li>✔️ Possibilidade de lance</li>
+          <li>❗ Contemplação pode não ser imediata</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Financiamento</h3>
+        <ul class="compare">
+          <li>✔️ Aquisição imediata do bem</li>
+          <li>❌ Incidência de juros elevados</li>
+          <li>❌ Parcelas mais altas</li>
+          <li>❌ Menor flexibilidade</li>
+          <li>✔️ Ideal para quem tem urgência</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>Dúvidas frequentes</h2>
+
+    <details data-animate>
+      <summary>Consórcio tem juros?</summary>
+      <p>
+        Não. O consórcio não cobra juros como um financiamento.
+        Existe apenas a taxa administrativa.
+      </p>
+    </details>
+
+    <details data-animate>
+      <summary>E se eu não for contemplado logo?</summary>
+      <p>
+        Você continua participando dos sorteios mensais
+        e pode ofertar lances para antecipar a contemplação.
+      </p>
+    </details>
+
+    <details data-animate>
+      <summary>Posso usar o consórcio para qualquer bem?</summary>
+      <p>
+        A carta de crédito pode ser usada conforme as regras do grupo,
+        sempre com orientação do consultor.
+      </p>
+    </details>
+
+    <details data-animate>
+      <summary>Consórcio é seguro?</summary>
+      <p>
+        O consórcio funciona por meio de administradoras regulamentadas
+        e segue regras específicas do sistema.
+      </p>
+    </details>
+
+    <details data-animate>
+  <summary>O consórcio tem reajuste?</summary>
+  <p>
+    Sim. O consórcio pode ter reajuste conforme as regras do grupo,
+    geralmente para acompanhar a atualização do valor do bem de referência.
+    Esses reajustes estão previstos em contrato e são explicados pelo consultor
+    antes da adesão.
+  </p>
+</details>
+
+<details data-animate>
+  <summary>Se eu atrasar uma parcela, perco a carta de crédito?</summary>
+  <p>
+    Não. O atraso de uma parcela não faz o cliente perder a carta de crédito.
+    Porém, podem existir encargos previstos em contrato e,
+    enquanto houver parcelas em atraso, o uso da carta pode ficar suspenso
+    até a regularização.
+  </p>
+</details>
+
+  </section>
+
+  <!-- CTA FINAL -->
+  <section style="text-align:center" data-animate>
+    <h2>Quer uma simulação oficial?</h2>
+    <p>
+      Fale diretamente com um consultor, tire suas dúvidas
+      e receba uma proposta personalizada.
+    </p>
+    <a class="btn" href="https://wa.me/5521974528623" target="_blank">
+      Falar com consultor no WhatsApp
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © Consultoria em Consórcios • Atendimento personalizado
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a class="whatsapp" href="https://wa.me/5521974528623" target="_blank">
+    WhatsApp
+  </a>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
