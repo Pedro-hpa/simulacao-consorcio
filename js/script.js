@@ -6,7 +6,7 @@ const btnSimular = document.getElementById("btnSimular");
 // ================= CONFIG =================
 const fatorEstimado = 1.18;
 const prazoFixo = 96;
-const valorMinimo = 280000;
+const valorMinimo = 40000;
 
 // ================= EVENTOS =================
 inputValor.addEventListener("input", atualizarSimulacao);
@@ -17,7 +17,7 @@ function atualizarSimulacao() {
   const valor = Number(inputValor.value);
 
   if (!valor || valor < valorMinimo) {
-    resultado.innerHTML = "O valor mínimo do bem é R$ 280.000";
+    resultado.innerHTML = "O valor mínimo do bem é R$ 40.000";
     return;
   }
 
@@ -41,7 +41,7 @@ function enviarParaWhatsApp() {
   const valor = Number(inputValor.value);
 
   if (!valor || valor < valorMinimo) {
-    alert("O valor mínimo para simulação é R$ 280.000");
+    alert("O valor mínimo para simulação é R$ 40.000");
     inputValor.focus();
     return;
   }
