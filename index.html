@@ -104,14 +104,27 @@
     </div>
   </section>
 
-  <!-- SIMULADOR -->
+  <!-- SIMULADOR COM CAPTURA -->
   <section>
     <div class="simulator" data-animate>
-      <h2>Tenha uma ideia da sua parcela</h2>
+      <h2>Faça sua simulação gratuita</h2>
       <p>
         Simulação com <strong>prazo fixo de 96 meses</strong>.<br>
         Valor mínimo do bem: <strong>R$ 40.000</strong>.
       </p>
+
+      <label for="nome">Seu nome</label>
+      <input type="text" id="nome" placeholder="Digite seu nome">
+
+      <label for="whatsapp">Seu WhatsApp</label>
+      <input type="tel" id="whatsapp" placeholder="(21) 9XXXX-XXXX">
+
+      <label for="tipo">Tipo de bem</label>
+      <select id="tipo">
+        <option value="">Selecione</option>
+        <option value="Carro">Carro</option>
+        <option value="Imóvel">Imóvel</option>
+      </select>
 
       <label for="valor">Valor do bem (R$)</label>
       <input
@@ -200,26 +213,6 @@
       </p>
     </details>
 
-    <details data-animate>
-      <summary>O consórcio tem reajuste?</summary>
-      <p>
-        Sim. O consórcio pode ter reajuste conforme as regras do grupo,
-        geralmente para acompanhar a atualização do valor do bem de referência.
-        Esses reajustes estão previstos em contrato e são explicados pelo consultor
-        antes da adesão.
-      </p>
-    </details>
-
-    <details data-animate>
-      <summary>Se eu atrasar uma parcela, perco a carta de crédito?</summary>
-      <p>
-        Não. O atraso de uma parcela não faz o cliente perder a carta de crédito.
-        Porém, podem existir encargos previstos em contrato e,
-        enquanto houver parcelas em atraso, o uso da carta pode ficar suspenso
-        até a regularização.
-      </p>
-    </details>
-
   </section>
 
   <!-- CTA FINAL -->
@@ -244,7 +237,6 @@
     WhatsApp
   </a>
 
-  <!-- JS -->
   <script src="js/script.js"></script>
 </body>
 </html>
