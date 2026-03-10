@@ -8,39 +8,18 @@ const inputWhatsapp = document.getElementById("whatsapp");
 const inputTipo = document.getElementById("tipo");
 
 // ================= CONFIG =================
-const fatorEstimado = 1.18;
 const prazoFixo = 96;
 const valorMinimo = 40000;
 
 // URL DO GOOGLE APPS SCRIPT
 const scriptURL = "https://script.google.com/macros/s/AKfycbwJYh6fKTWxEM-gqJkdbegwoaYgWQZMN07bvRBNRQ7xoo3ftevTQkwMUs-YgOohzA5S/exec";
 
-// ================= EVENTOS =================
-if (inputValor) {
-  inputValor.addEventListener("input", atualizarSimulacao);
-}
-
+// ================= EVENTO BOTÃO =================
 if (btnSimular) {
   btnSimular.addEventListener("click", enviarFormulario);
 }
 
-// ================= SIMULAÇÃO =================
-function atualizarSimulacao() {
-  const valor = Number(inputValor.value);
-
-  if (!valor || valor < valorMinimo) {
-    resultado.innerHTML = "O valor mínimo do bem é R$ 40.000";
-    return;
-  }
-
-  const parcela = (valor * fatorEstimado) / prazoFixo;
-
-  resultado.innerHTML = `
-    Parcela aproximada (96 meses):
-    <strong>${formatarMoeda(parcela)}</strong>
-  `;
-}
-
+// ================= FORMATAÇÃO =================
 function formatarMoeda(valor) {
   return valor.toLocaleString("pt-BR", {
     style: "currency",
@@ -67,11 +46,14 @@ async function enviarFormulario() {
     return;
   }
 
+  // Mostrar mensagem de curiosidade
+  resultado.innerHTML = "Abrindo consultor no WhatsApp...";
+
   // Enviar para Google Sheets
   try {
     await fetch(scriptURL, {
       method: "POST",
-      mode: "no-cors", // necessário para Apps Script
+      mode: "no-cors",
       body: JSON.stringify({
         nome,
         whatsapp,
